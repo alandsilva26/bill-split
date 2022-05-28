@@ -1,7 +1,7 @@
 // redux
 import { useAppSelector } from '../../store/store';
 // types
-import Person from '../../types/person';
+import Person from '../../types/user';
 
 const Home = () => {
   const users = useAppSelector((state) => state.contacts);
@@ -9,6 +9,9 @@ const Home = () => {
   return (
     <>
       <h1>Bil Split</h1>
+      <hr />
+      <a href="/split">New Split</a>
+      <br />
       <div>
         {users.map((user, index) => (
           <div key={index}>{user.name}</div>

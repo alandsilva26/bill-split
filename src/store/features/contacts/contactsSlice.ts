@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 // types
-import Person from '../../../types/person';
+import User from '../../../types/user';
 // other
 import data from '../../../utils/users.json';
 
-const initialState: Array<Person> = data;
+const initialState: Array<User> = data;
 
 export const contactsSlice = createSlice({
   name: 'contacts',

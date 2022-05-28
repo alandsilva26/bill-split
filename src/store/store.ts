@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux';
+
+// reducers
 import contactsReducer from './features/contacts/contactsSlice';
+import billReducer from './features/bill/billSlice';
 
 const store = configureStore({
   reducer: {
     contacts: contactsReducer,
+    bill: billReducer,
   },
 });
 

@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import store from './store/store';
 import { Provider } from 'react-redux';
 // views
-import { Home } from './views';
+import { Home, Split } from './views';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="split" element={<Split />} />
         </Routes>
       </BrowserRouter>
     </Provider>
